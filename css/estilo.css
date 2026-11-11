@@ -1,0 +1,159 @@
+
+/* DISEÑO GENERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef4ed;
+    color: #26352b;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background: #245c43;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.encabezado p {
+    margin-bottom: 0;
+}
+
+/* MENU HORIZONTAL */
+.menu-horizontal {
+    background: #183e2e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-horizontal a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 24px;
+    display: block;
+}
+
+.menu-horizontal a:hover {
+    background: #4d8966;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: flex-start;
+}
+
+/* MENU VERTICAL */
+.menu-vertical {
+    background: #d4e7d6;
+    width: 220px;
+    min-width: 190px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu-vertical h3 {
+    margin-top: 0;
+    color: #245c43;
+}
+
+.menu-vertical a {
+    display: block;
+    color: #244b35;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 1px solid #b5ceb9;
+}
+
+.menu-vertical a:hover {
+    background: #b5d3ba;
+    border-radius: 5px;
+}
+
+/* CONTENIDO */
+.contenido {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 0;
+    line-height: 1.7;
+}
+
+.contenido h2 {
+    color: #286447;
+    border-bottom: 2px solid #b5d3ba;
+    padding-bottom: 8px;
+}
+
+.portada {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.foto {
+    width: 100%;
+    max-width: 550px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+/* BOTON */
+.boton {
+    display: inline-block;
+    background: #286447;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+.boton:hover {
+    background: #183e2e;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background: #183e2e;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+/* ADAPTACION PARA CELULARES */
+@media (max-width: 650px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .menu-vertical {
+        width: 100%;
+    }
+
+    .menu-horizontal a {
+        padding: 12px;
+    }
+
+    .encabezado h1 {
+        font-size: 27px;
+    }
+}
